@@ -1,24 +1,7 @@
-# README
+# SebouBlog
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Blog powered by Ruby on Rails 6.0.0
 
-Things you may want to cover:
+## Start in development mode
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+    $ foreman start -f Procfile.dev
