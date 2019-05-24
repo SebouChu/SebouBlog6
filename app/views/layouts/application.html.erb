@@ -29,6 +29,28 @@
             <%= link_to "Home", root_path, class: 'nav-link' %>
           </li>
         </ul>
+
+        <div class="dropdown">
+          <a
+            class="nav-link text-white dropdown-toggle"
+            href="#"
+            id="navbarUserDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false">
+            <%= user_signed_in? ? current_user.display_name : "Anonymous" %>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarUserDropdown">
+            <% if user_signed_in? %>
+              <%= link_to "Edit profile", edit_user_registration_path, class: 'dropdown-item' %>
+              <%= link_to "Log out", destroy_user_session_path, class: 'dropdown-item' %>
+            <% else %>
+              <%= link_to "Log in", new_user_session_path, class: 'dropdown-item' %>
+              <%= link_to "Sign up", new_user_registration_path, class: 'dropdown-item' %>
+            <% end %>
+          </div>
+        </div>
       </div>
     </nav>
 
