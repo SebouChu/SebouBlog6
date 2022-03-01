@@ -8,7 +8,7 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 gem 'webpacker', '~> 4.0'
 gem 'jbuilder', '~> 2.5'
-gem 'image_processing', '~> 1.2'
+gem 'image_processing', '~> 1.12'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'simple_form'
 gem 'devise'
